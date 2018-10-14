@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vueharjutus</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="shortcut icon" href="src/assets/favicon.png"/>
+  </head>
+  
+  <body>
+    
+      <div class="jumbotron jumbotron-fluid" id="jumbo">
+          <div class="container">
+            <h1 class="display-4" id="title">Vue.js õppekeskkond</h1>
+          </div>
+        </div>
+        
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <a class="navbar-brand" href="https://vuejs.org/"><img src="src/assets/logoI.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" id="link">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Avaleht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todo.html">ToDo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="example.html">Näited</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Materjalid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="game.html">Mängime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.php">Tagasiside</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <br>
+
+  <div class="container">  
+      <div id="example">
+      <p><a href="https://codepen.io/aevelin/pen/PyJKWR">Näide I</a></p>
+        <button v-on:click="show = !show" class="btn btn-default" id="button">
+            Näita
+          </button>
+          <transition name="fade">
+            <img v-if="show" src="src/assets/example.PNG" alt="model" class="img-fluid">
+          </transition>
+        </div>
+<br>
+        <div id="example1">
+            <p><a href="https://codepen.io/aevelin/pen/VEMzzW?editors=1010#0">Näide II</a></p>
+            <button v-on:click="show = !show" class="btn btn-default" id="button">
+              Näita
+            </button>
+            <transition name="fade">
+                <img v-if="show" src="src/assets/example1.PNG" alt="model" class="img-fluid">
+            </transition>
+          </div>
+<br>
+          <div id="example2">
+              <p><a href="https://codepen.io/aevelin/pen/zmEdjq">Näide III</a></p>
+              <button v-on:click="show = !show" class="btn btn-default" id="button">
+                Näita
+              </button>
+              <transition name="fade">
+                  <img v-if="show" src="src/assets/example2.PNG" alt="model" class="img-fluid">
+              </transition>
+            </div>
+<br>
+            <div id="example3">
+                <p><a href="https://codepen.io/aevelin/pen/gBGxjj?editors=1010#0">Näide IV</a></p>
+                <button v-on:click="show = !show" class="btn btn-default" id="button">
+                  Näita
+                </button>
+                <transition name="fade">
+                    <img v-if="show" src="src/assets/example3.PNG" alt="model" class="img-fluid">
+                </transition>
+              </div>
+<br>
+              <div id="example4">
+                  <p><a href="https://codepen.io/aevelin/pen/xyXLyq">Näide V</a></p>
+                  <button v-on:click="show = !show" class="btn btn-default" id="button">
+                    Näita
+                  </button>
+                  <transition name="fade">
+                      <img v-if="show" src="src/assets/example4.PNG" alt="model" class="img-fluid">
+                  </transition>
+                </div>
+<br>
+  </div>
+<!--- jalus -->
+<div>
+    <ul class="nav justify-content-center" id="footer">
+          <li class="nav-item">
+              <span class="navbar-text">&copy;EA 2018</span>
+        </li>
+    </ul>
+</div>
+
+<script src="js/example.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vueharjutus</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="shortcut icon" href="src/assets/favicon.png"/>
+  </head>
+  
+  <body>
+    
+      <div class="jumbotron jumbotron-fluid" id="jumbo">
+          <div class="container">
+            <h1 class="display-4" id="title">Vue.js õppekeskkond</h1>
+          </div>
+        </div>
+        
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <a class="navbar-brand" href="https://vuejs.org/"><img src="src/assets/logoI.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" id="link">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Avaleht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todo.html">ToDo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="example.html">Näited</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Materjalid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="game.html">Mängime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.php">Tagasiside</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <br>
+
+<!-- Tabel materjalidega-->
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Materjal</th>
+        <th scope="col">Link materjalile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Vue.js</td>
+        <td><a href="https://vuejs.org">Vue.js official page</a></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Vue.js Basics</td>
+        <td><a href="https://www.youtube.com/watch?v=A5S23KS_-bU">YouTube</a></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Vue.js in Twitter</td>
+        <td><a href="https://twitter.com/vuejs">Twitter</a></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Book from O'Reilly Media</td>
+        <td><a href="http://shop.oreilly.com/product/0636920103455.do">Book</a></td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Vue.js - Udemy course</td>
+        <td><a href="https://www.udemy.com/vue-2-crash-course/">Udemy</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--- jalus -->
+<div>
+    <ul class="nav justify-content-center" id="footer">
+          <li class="nav-item">
+              <span class="navbar-text">&copy;EA 2018</span>
+        </li>
+    </ul>
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

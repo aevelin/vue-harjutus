@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vueharjutus</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="shortcut icon" href="src/assets/favicon.png"/>
+  </head>
+  
+  <body>
+    
+      <div class="jumbotron jumbotron-fluid" id="jumbo">
+          <div class="container">
+            <h1 class="display-4" id="title">Vue.js õppekeskkond</h1>
+          </div>
+        </div>
+        
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <a class="navbar-brand" href="https://vuejs.org/"><img src="src/assets/logoI.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" id="link">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Avaleht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todo.html">ToDo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="example.html">Näited</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Materjalid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="game.html">Mängime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.php">Tagasiside</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <br>
+
+  <div class="container" id="todo">
+
+  <ul class="list-group">
+      <li class="list-group-item">Lisa tegemist vajav ülesanne ja vajuta "Enter".</li>
+      <li class="list-group-item">Tee topeltklikk, et olemasolevat ülesannet muuta.</li>
+      <li class="list-group-item">Vajuta "X", et ülesanne kustutada.</li>
+    </ul>
+
+ 	<br>
+    <ul class="list-group">
+      <li class="list-group-item" id="list">
+        <input v-model="newTask" @keyup.enter="addTask" placeholder="Mida on vaja teha?">
+          <button class="btn btn-default" id="button1" @click="clearList">Tühjenda</button>
+      </li>
+  
+          <li class="list-group-item" id ="list1" v-for="task in tasks" :class="{done: isChecked(task)}">
+              
+              <input type="text" v-if="task === editingTask" v-auto-focus class="text-input" @keyup.enter="endEditing(task)" @blur="endEditing(task)" v-model="task.text">
+
+              <label for="checkbox" v-if="task !== editingTask" @dblclick="editTask(task)">{{ task.text }}</label>
+              
+              <button class="btn btn-default" id="button2" @click="removeTask(task)">X</button>
+
+          </li>
+    </ul>
+  
+  </div>
+<br>
+<!--- jalus -->
+<div>
+    <ul class="nav justify-content-center" id="footer">
+          <li class="nav-item">
+              <span class="navbar-text">&copy;EA 2018</span>
+        </li>
+    </ul>
+</div>
+
+      <script src="js/todo.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

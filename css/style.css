@@ -1,0 +1,157 @@
+#navbar {
+    background-color: #4fc08d;
+}
+
+#footer {
+    background-color: #4fc08d;
+}
+
+#jumbo {
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1505154346314-6e82adcdc8e6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb7a07b33ee59fc4d45a6f546bd063fa&auto=format&fit=crop&w=1651&q=80");
+    height: 100vh;
+}
+
+#link .nav-link {
+    color: #34495e;
+}
+
+#title {
+    color: #fff;
+    text-align: center;
+}
+
+#button {
+    background-color: #4fc08d;
+}
+
+#button1 {
+    background-color: #4fc08d;
+    float: right;
+}
+#button2 {
+    background-color: #34495e;
+    float: right;
+}
+
+#list {
+    background-color: #34495e
+}
+#list1 {
+    background-color: #4fc08d
+}
+
+
+.center, .modal-container, .titleBlock, #board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  span {
+    color: #34495e;
+  }
+  
+  .modal-mask {
+    position: absolute;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease;
+  }
+  
+  .modal-container {
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all .3s ease;
+  }
+  
+  .modal-body {
+    font-family: sans-serif;
+    color: black;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #4fc08d;
+  }
+  
+  .select_marker {
+    cursor: pointer;
+  }
+  
+  #welcome {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .titleBlock {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .titleBlock h1 {
+    font-size: 70px;
+    width: 100%;
+  }
+  .titleBlock .mode {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  #board {
+    border-collapse: separate;
+    border-spacing: 2px;
+  }
+  
+  td {
+    vertical-align: middle;
+  }
+  
+  .square {
+    width: 7vw;
+    height: 7vw;
+    background: #6C7A89;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 7vw;
+    line-height: 7vw;
+    text-align: center;
+    color: white;
+  }
+  .square:hover {
+    opacity: .8;
+  }
+  .square.active {
+    background: #4fc08d;
+  }
+  
+  #reset {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #4fc08d;
+  }
+
+  #start a {
+      color: #fff;
+  }
+
+  #start a:hover {
+      color: #fff;
+      text-decoration: none;
+  }
